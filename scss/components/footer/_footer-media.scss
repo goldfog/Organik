@@ -1,0 +1,71 @@
+@include desktop() {
+  .footer {
+    &__email-title {
+      font-size: 25px;
+    }
+    &__navigation {
+      &-title {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@include laptop() {
+  .footer {
+    &__social {
+      &-text {
+        padding: 44px 20px 50px 20px;
+      }
+    }
+  }
+}
+
+@include tablet() {
+  .footer {
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      padding: 0;
+      text-align: center;
+    }
+    &__contacts {
+      text-align: center;
+      margin: 0;
+    }
+    &__email-title {
+      text-align: center;
+    }
+    &__email-text {
+      text-align: center;
+    }
+    &__social {
+      width: 100%;
+      &-logo {
+        margin-bottom: 15px;
+      }
+    }
+    &__navigation {
+      margin: 0;
+    }
+    &__copy {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@include mobile() {
+  .footer {
+    &__social{
+      &-icon {
+        display: flex;
+        column-gap: 5px;
+      }
+    }
+    &__copy {
+      font-size: 16px;
+    }
+  }
+}

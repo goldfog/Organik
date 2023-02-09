@@ -1,0 +1,8 @@
+@include desktop-defaul() {
+  .selection__product {
+    &-inner {
+      justify-content: center;
+      column-gap: 20px;
+    }
+  }
+}

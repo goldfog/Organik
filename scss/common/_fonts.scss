@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url("../fonts/roboto-regular.woff2") format("woof2");
+  src: url("../fonts/roboto-regular.woff") format("woof");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url("../fonts/roboto-bold.woff") format("woof2");
+  src: url("../fonts/roboto-bold.woff") format("woof");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: url("../fonts/open-sans-bold2.woff2") format("woof2");
+  src: url("../fonts/open-sans-bold2.woff") format("woof");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: url("../fonts/open-sans-regular.woff2") format("woof2");
+  src: url("../fonts/open-sans-regular.woff") format("woof");
+  font-weight: 400;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+// @font-face {
+//   font-family: 'Yellowtail', cursive;
+//   src: local('Yellowtail');
+//   src: url(../../fonts/Yellowtail-Regular.ttf) format("ttf");
+//   src: url("../../fonts/Yellowtail-Regular.woff2") format("woof2");
+//   src: url("../../fonts/Yellowtail-Regular.woff") format("woof");
+//   font-weight: 400;
+// }

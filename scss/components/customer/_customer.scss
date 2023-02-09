@@ -1,0 +1,96 @@
+.customer {
+  background-image: url(../../images/customer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  &__review {
+    padding: 130px 0 150px;
+    width: 100%;
+    &-abovetitle {
+      @extend %extend-exsample1;
+      text-align: center;
+    }
+    &-title {
+      @extend %extend-exsample2;
+      text-align: center;
+    }
+    &-item {
+      margin: 0 auto;
+      text-align: center;
+      padding: 60px 0 96px;
+      border-bottom: 1px solid $color10;
+    }
+    &-avt {
+      margin: 0 0 5px;
+    }
+    &-stars {
+      margin: 0 0 30px 0;
+      height: 27px;
+      font-size: 6px;
+    }
+    &-text {
+      margin-bottom: 20px;
+    }
+    &-name {
+      font-family: $fonts2;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 34px;
+      text-align: center;
+      letter-spacing: 0.36px;
+      color: $color1;
+    }
+    &-consumer {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 27px;
+      letter-spacing: 0.36px;
+      color: $color3;
+    }
+  }
+  &__statistic {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    margin: 100px 0 0;
+    &-block {
+    position: relative;
+    border: 6px solid $color2;
+    border-radius: 200px;
+    width: 250px;
+    height: 250px;
+    }
+    &-item {
+      position: absolute;
+      left: calc(50% - 240px/2 + 1px);
+      top: calc(50% - 240px/2 + 1px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: $bg2;
+      border: 5px solid #fff;
+      border-radius: 200px;
+      width: 240px;
+      height: 240px;
+    }
+    &-num {
+      font-family: $fonts2;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 55px;
+      letter-spacing: 0.36px;
+      color: $color1;
+    }
+    &-text {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 32px;
+      text-align: center;
+      letter-spacing: 0.36px;
+      color: $color1;
+    }
+  }
+}

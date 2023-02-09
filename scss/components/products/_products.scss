@@ -1,0 +1,81 @@
+.products {
+  &__abovetitle {
+    @extend %extend-exsample1;
+    text-align: center;
+  }
+  &__title {
+    font-family: $fonts2;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: $color1;
+    margin-bottom: 42px;
+  }
+  &__card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px;
+    justify-content: center;
+    margin-bottom: 139px;
+    
+    &-item {
+      border-radius: 30px;
+      background: $bg1;
+      width: 447px;
+      padding: 30px 30px 20px 30px;
+      transition: all .5s ease-in-out;
+      &:hover {
+        box-shadow: 0px 1px 25px $color1;
+        transition: all .5s ease-in-out;
+      }
+    }
+    &-name {
+      font-family: $fonts2;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 27px;
+      letter-spacing: 0.36px;
+      background: $color1;
+      color: #fff;
+      width: 118px;
+      padding: 5px 20px;
+      border-radius: 8px;
+    }
+    &-text {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 35px;
+      letter-spacing: 0.36px;
+      color: $color1;
+      border-bottom: 1px solid $color8;
+      padding: 20px 0 11px 0;
+      margin-bottom: 10px;  
+    }
+    &-down {
+      display: flex;
+      align-items: baseline;
+    }
+    &-oldprice {
+      font-size: 17px;
+      line-height: 32px;
+      letter-spacing: 0.36px;
+      text-decoration-line: line-through;
+      color: $color9;
+      margin-right: 10px;
+    }
+    &-newprice {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 32px;
+      letter-spacing: 0.36px;
+      color: $color1;
+      margin-right: 80px;
+    }
+    &-rating {
+      font-size: 6px;
+    }
+  }
+}

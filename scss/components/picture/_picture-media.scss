@@ -1,0 +1,58 @@
+@include laptop() {
+  .pictures {
+    margin-bottom: 80px;
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__left {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@include mobile() {
+  .pictures {
+    &__left {
+      height: 290px;
+      margin-bottom: 10px;
+    }
+    &__right {
+      height: 290px;
+    }
+    &__content {
+      text-align: center;
+      span {
+        font-size: 30px;
+        line-height: 40px;
+      }
+      p {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+  }
+}
+
+@include phone() {
+  .pictures {
+    &__left {
+      height: 200px;
+    }
+    &__right {
+      height: 200px;
+    }
+    &__content {
+      text-align: center;
+      span {
+        font-size: 25px;
+        line-height: 35px;
+      }
+      p {
+        font-size: 25px;
+        line-height: 35px;
+      }
+    }
+  }
+}

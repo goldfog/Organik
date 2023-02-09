@@ -1,0 +1,89 @@
+.wrapper {
+  margin-bottom: 140px;
+  .header {
+    &__body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 0 40px;
+      position: relative;
+    }
+    &__menu {
+      display: flex;
+    }
+    &__list {
+      display: flex;
+      align-items: center;
+      column-gap: 40px;
+      &-link {
+        font-family: $fonts2;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.36px;
+        transition: all .3s ease-in-out;
+        color: $color1;
+      }
+      &-link:hover {
+        color: $color2;
+      }
+    }
+    &__burger {
+      display: none;
+    }
+  
+    &__logo {
+      max-width: 200px;
+      margin-right: 80px;
+    }
+  
+    &__basket {
+      display: flex;
+      align-items: center;
+      border: 1px solid $color7;
+      border-radius: 33px;
+      padding: 7px 24px 7px 10px;
+      font-family: $fonts2;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 29px;
+      letter-spacing: 0.36px;
+  
+      &-link {
+        margin-right: 10px;
+        width: 56px;
+        height: 56px;
+        padding: 16px;
+        background: $color1;
+        border-radius: 100%;
+      }
+  
+      &-text {
+        margin-right: 7px;
+      }
+    }
+  }
+  
+  .header__content {
+    background-image: url(../../images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 220px 0 250px 70px;
+    &-subtitle {
+      @extend %extend-exsample1;
+    }
+    &-title{
+      font-family: $fonts2;
+      font-weight: 700;
+      font-size: 70px;
+      line-height: 84px;
+      letter-spacing: 0.36px;
+      color: $color1;
+      margin-bottom: 30px;
+    }
+    &-btn {
+      @extend %extend-btn;
+    }
+  }
+}

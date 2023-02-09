@@ -1,0 +1,24 @@
+@include laptop {
+  .selection__product {
+    padding: 70px 0 70px;
+    &-abovetitle {
+      text-align: center;
+    }
+    &-btn {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@include tablet {
+  .selection__product {
+    &-title {
+      font-size: 38px;
+      line-height: 48px;
+    }
+    &-btn {
+      width: 185px;
+      padding: 25px 11px 25px 15px;
+    }
+  }
+}

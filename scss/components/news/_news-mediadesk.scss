@@ -1,0 +1,18 @@
+@include desktop-defaul() {
+  .news {
+    &__item {
+      display: grid;
+      gap: 100px;
+    }
+    &__titles {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    &__title {
+      text-align: center;
+      margin-right: 0;
+    }
+  }
+}

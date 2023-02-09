@@ -1,0 +1,90 @@
+.footer {
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 132px 0 148px;
+  }
+  &__contacts {
+    text-align: right;
+    margin-right: 19px;
+    height: 369px;
+  }
+  &__email,
+  &__group-phone {
+    margin-bottom: 40px;
+  }
+  &__email-title {
+    font-family: $fonts2;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: right;
+    letter-spacing: 0.36px;
+    color: $color1;
+    margin-bottom: 35px;
+  }
+  &__email-text,
+  &__phone-text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: right;
+    letter-spacing: 0.36px;
+    color: $color3;
+    margin-bottom: 5px;
+  }
+  &__social {
+    border-left: 1px solid $color12;
+    border-right: 1px solid $color12;
+    width: 670px;
+    height: 369px;
+    text-align: center;
+    &-logo {
+      margin-bottom: 40px;
+    }
+    &-text {
+      padding: 44px 50px 50px 50px;
+    }
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 20px;
+      a {
+        border-radius: 200px;
+        background: $color7;
+        padding: 19px;
+        height: 60px;
+        width: 60px;
+      }
+    }
+  }
+  &__navigation {
+    margin-left: 19px;
+    height: 369px;
+    &-title {
+      font-family: $fonts2;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 42px;
+      letter-spacing: 0.36px;
+      color: $color1;
+      margin-bottom: 20px;
+    }
+  }
+  &__list {
+    li {
+      margin-bottom: 24px;
+    }
+  }
+  &__copy {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid $color12;
+    padding: 21px 0 27px;
+    p {
+      padding: 0 11px 0 11px;
+    }
+  }
+}

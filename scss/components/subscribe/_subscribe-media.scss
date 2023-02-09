@@ -1,0 +1,72 @@
+@include desktop() {
+  .subscribe {
+    background-size: cover;
+    &__title {
+      font-size: 42px;
+    }
+    .form {
+      input {
+        padding: 26px 20px 26px 30px;
+      }
+    }
+  }
+}
+
+@include laptop() {
+  .subscribe {
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 0px;
+    }
+    &__title {
+      text-align: center;
+    }
+  }
+}
+
+@include tablet() {
+  .subscribe {
+    &__item {
+      padding: 20px 0;
+    }
+    .form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      input {
+        padding: 20px 10px 20px 20px;
+      }
+    }
+    &__title {
+      text-align: center;
+      font-size: 33px;
+      line-height: 45px;
+    }
+    &__btn {
+      width: 175px;
+      height: 70px;
+    }
+  }
+}
+
+@include mobile() {
+  .subscribe {
+    .form {
+      input {
+        font-size: 15px;
+      }
+    }
+    &__title {
+      font-size: 30px;
+      line-height: 43px;
+      margin-bottom: 20px;
+    }
+    &__btn {
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@include laptop() {
+  .products {
+    &__card {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@include mobile() {
+  .products {
+    &__title {
+      font-size: 38px;
+      line-height: 48px;
+    }
+    &__card {
+      &-item {
+        width: 100%;
+      }
+      &-images {
+        width: 100%;
+      }
+      &-text {
+        text-align: center;
+      }
+      &-down {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      &-newprice {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@include phone() {
+  .products {
+    &__card {
+      &-newprice {
+        margin-right: 0;
+      }
+    }
+  }
+}

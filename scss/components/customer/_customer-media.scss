@@ -1,0 +1,17 @@
+@include mobile() {
+  .customer {
+    &__review {
+      padding: 20px 0 70px;
+      &-title {
+        font-size: 38px;
+        line-height: 48px;
+      }
+      &-text {
+        font-size: 16px;
+      }
+      &-item {
+        padding: 60px 0 0px;
+      }
+    }
+  }
+}

@@ -1,0 +1,162 @@
+@include laptop {
+  .wrapper {
+    margin-bottom: 80px;
+    .header {
+      &__body {
+        display: flex;
+        flex-direction: column;
+      }
+      &__logo {
+        margin-right: 20px;
+      }
+      &__list {
+        column-gap: 38px;
+      }
+      &__content {
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0 100px 70px;
+        &-title {
+          font-size: 64px;
+        }
+        &-btn {
+          font-size: 17px;
+          width: 200px;
+          height: 70px;
+          img {
+            padding: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .wrapper {
+    .header {
+      position: relative;
+      &__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 17px 0 17px;
+      }
+      &__list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        overflow: auto;
+        left: 0;
+        background-color: #efd372;
+        min-height: 350px;
+        padding: 20px 0 0;
+        top: -430%;
+        transition: all 0.5s ease-in-out;
+        z-index: 15;
+        li {
+          margin-bottom: 20px;
+        }
+      }
+      &__list.active {
+        top: 0;
+      }
+      &__burger {
+        position: absolute;
+        right: 10px;
+        top: 40px;
+        display: block;
+        width: 30px;
+        height: 20px;
+        z-index: 16;
+        &::after,
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          background-color: $color1;
+          height: 2px;
+          transition: all 0.5s ease-in-out;
+        }
+        span {
+          content: "";
+          position: absolute;
+          width: 100%;
+          background-color: $color1;
+          height: 2px;
+          bottom: 9px;
+          transition: all 0.5s ease-in-out;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          background-color: $color1;
+          height: 2px;
+          top: 1px;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          background-color: $color1;
+          height: 2px;
+          bottom: 1px;
+        }
+      }
+      .active::before {
+        transform: rotate(45deg);
+        bottom: 9px;
+      }
+
+      .active span {
+        opacity: 0;
+      }
+
+      .active::after {
+        transform: rotate(-45deg);
+        top: 9px;
+      }
+      &__basket-link {
+        width: 46px;
+        height: 46px;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .wrapper {
+    .header {
+      &__body {
+        flex-direction: column;
+      }
+      &__img {
+        width: 156px;
+        height: 46px;
+      }
+      &__content {
+        background-size: cover;
+        background-position: center;
+        padding: 70px 0 70px 0;
+        text-align: center;
+        &-title {
+          font-size: 40px;
+          line-height: 40px;
+        }
+        &-btn {
+          margin: 0 auto;
+          font-size: 17px;
+          width: 200px;
+          height: 70px;
+          img {
+            padding: 8px;
+          }
+        }
+      }
+    }
+  }
+}

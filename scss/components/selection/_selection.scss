@@ -1,0 +1,43 @@
+.selection__product {
+  background: $color1;
+  padding: 140px 0 140px;
+  &-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-descr {
+    margin-bottom: 30px;
+  }
+  &-btn {
+    @extend %extend-btn;
+    width: 267px;
+    padding: 25px 11px 25px 33px;
+    transition: all .3s ease-in-out;
+    :hover {
+      box-shadow: 0px 0px 25px 0px $color6;
+    }
+  }
+  &-abovetitle {
+    @extend %extend-exsample1;
+    margin-bottom: 0;
+  }
+  &-title {
+    @extend %extend-exsample2;
+    padding-bottom: 18px;
+    color: #fff;
+  }
+  .selection__product-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 19px;
+    &__item {
+      &:hover {
+        box-shadow: 0px 1px 25px $color6;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+%extend-body {
+  font-family: $fonts1;
+  scroll-behavior: smooth;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.36px;
+  color: $color3;
+}
+
+%extend-exsample1 {
+  font-family: $fonts3;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 65px;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  margin-bottom: 14px;
+  color: $color2;
+}
+
+%extend-exsample2 {
+  font-family: $fonts2;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 58px;
+  text-align: center;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: $color1;
+}
+
+%extend-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $fonts2;
+  font-size: 19px;
+  line-height: 32px;
+  font-weight: 400;
+  color: $color1;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  width: 219px;
+  height: 82px;
+  background-color: $color6;
+  border: 1px solid $color6;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  &:hover {
+    box-shadow: 0px 1px 25px $color1;
+  }
+  span {
+    margin-right: 24px;
+  }
+  img {
+    background: $color1;
+    padding: 12px;
+    border-radius: 100%;
+  }
+}
