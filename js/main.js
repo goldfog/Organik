@@ -1,9 +1,5 @@
 "use strict";
 
-AOS.init({
-  disable: "phone",
-});
-
 const menu = document.querySelector(".header__list");
 const burger = document.querySelector(".header__burger");
 
