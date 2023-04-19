@@ -1,5 +1,7 @@
 "use strict";
 
+// Menu Burger
+
 const menu = document.querySelector(".header__list");
 const burger = document.querySelector(".header__burger");
 
